@@ -68,7 +68,8 @@ public class StepD {
 	@Before 
 	public void start()
 	{
-		Setup();
+		//Setup();
+		 driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(UL);
